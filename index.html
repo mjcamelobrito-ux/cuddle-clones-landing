@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finally, Pajamas That Can Handle Your Fur Baby's Love - 25% Off | Cuddle Clones</title>
+    <meta name="description" content="Pet-hair resistant summer pajamas for pet parents. Breathable, stylish sleepwear designed for cuddling with furry friends. Get 25% off with code COZY25.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #E85A4F;
+            --primary-dark: #D14940;
+            --cream: #FAF7F2;
+            --cream-dark: #F5F0E8;
+            --charcoal: #2D2D2D;
+            --gray: #6B6B6B;
+            --light-gray: #E8E8E8;
+            --white: #FFFFFF;
+            --success: #4CAF50;
+            --warning: #FF9800;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--charcoal);
+            background: var(--cream);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        
+        /* Announcement Bar */
+        .announcement-bar {
+            background: var(--charcoal);
+            color: var(--white);
+            text-align: center;
+            padding: 12px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .announcement-bar span {
+            color: var(--primary);
+            font-weight: 700;
+        }
+        
+        /* Sticky Header */
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            z-index: 1000;
+            padding: 15px 0;
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--charcoal);
+        }
+        
+        .header-cta {
+            background: var(--primary);
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        .header-cta:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
+            padding: 60px 20px 80px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .reviews-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--white);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 14px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .stars {
+            color: #FFB800;
+        }
+        
+        .hero h1 {
+            font-size: 44px;
+            margin-bottom: 20px;
+            color: var(--charcoal);
+        }
+        
+        .hero h1 span {
+            color: var(--primary);
+        }
+        
+        .hero-subtitle {
+            font-size: 20px;
+            color: var(--gray);
+            margin-bottom: 32px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-image {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .promo-code {
+            background: var(--white);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            border: 2px dashed var(--primary);
+        }
+        
+        .promo-label {
+            font-size: 14px;
+            color: var(--gray);
+        }
+        
+        .promo-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 2px;
+        }
+        
+        .hero-ctas {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+            padding: 16px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(232, 90, 79, 0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--charcoal);
+            padding: 16px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            border: 2px solid var(--charcoal);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: inline-block;
+        }
+        
+        .btn-secondary:hover {
+            background: var(--charcoal);
+            color: var(--white);
+        }
+        
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--gray);
+            font-size: 12px;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+        }
+        
+        .scroll-indicator svg {
+            width: 24px;
+            height: 24px;
+            margin-top: 4px;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(8px); }
+        }
+        
+        /* Trust Badges */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin-top: 32px;
+        }
+        
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: var(--gray);
+        }
+        
+        .trust-badge svg {
+            width: 20px;
+            height: 20px;
+            color: var(--success);
+        }
+        
+        /* Media Logos */
+        .media-section {
+            padding: 40px 20px;
+            background: var(--white);
+            text-align: center;
+        }
+        
+        .media-section p {
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .media-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+            flex-wrap: wrap;
+            opacity: 0.6;
+        }
+        
+        .media-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            color: var(--charcoal);
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 80px 20px;
+            background: var(--white);
+        }
+        
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+        
+        .features-image {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        
+        .features-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .features-content h2 {
+            font-size: 36px;
+            margin-bottom: 24px;
+        }
+        
+        .features-list {
+            list-style: none;
+            margin-top: 32px;
+        }
+        
+        .features-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        
+        .features-list li::before {
+            content: "✓";
+            background: var(--primary);
+            color: var(--white);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            flex-shrink: 0;
+        }
+        
+        /* Marquee */
+        .marquee {
+            background: var(--primary);
+            color: var(--white);
+            padding: 16px 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .marquee-content {
+            display: inline-block;
+            animation: scroll 20s linear infinite;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        /* How It Works */
+        .how-it-works {
+            padding: 80px 20px;
+            background: var(--cream);
+            text-align: center;
+        }
+        
+        .how-it-works h2 {
+            font-size: 36px;
+            margin-bottom: 48px;
+        }
+        
+        .steps {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+        
+        .step {
+            background: var(--white);
+            padding: 40px 24px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        
+        .step-number {
+            width: 48px;
+            height: 48px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+        
+        .step h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+        
+        .step p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+        
+        /* Product Showcase */
+        .products {
+            padding: 80px 20px;
+            background: var(--white);
+            text-align: center;
+        }
+        
+        .products h2 {
+            font-size: 36px;
+            margin-bottom: 48px;
+        }
+        
+        .product-carousel {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+        
+        .product-card {
+            background: var(--cream);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .product-image {
+            height: 300px;
+            background: var(--cream-dark);
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .product-info {
+            padding: 24px;
+        }
+        
+        .product-info h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        
+        .product-price {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 16px;
+        }
+        
+        .product-price .original {
+            text-decoration: line-through;
+            color: var(--gray);
+            font-size: 16px;
+            margin-left: 8px;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 20px;
+            background: var(--cream);
+            text-align: center;
+        }
+        
+        .testimonials h2 {
+            font-size: 36px;
+            margin-bottom: 48px;
+        }
+        
+        .testimonial-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+        
+        .testimonial {
+            background: var(--white);
+            padding: 32px;
+            border-radius: 16px;
+            text-align: left;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        
+        .testimonial-stars {
+            color: #FFB800;
+            margin-bottom: 16px;
+        }
+        
+        .testimonial p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        
+        .author-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .author-name {
+            font-weight: 600;
+        }
+        
+        .author-title {
+            font-size: 14px;
+            color: var(--gray);
+        }
+        
+        /* Guarantee Section */
+        .guarantee {
+            padding: 80px 20px;
+            background: var(--white);
+            text-align: center;
+        }
+        
+        .guarantee-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .guarantee-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--cream);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 40px;
+        }
+        
+        .guarantee h2 {
+            font-size: 36px;
+            margin-bottom: 16px;
+        }
+        
+        .guarantee p {
+            color: var(--gray);
+            margin-bottom: 24px;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 80px 20px;
+            background: var(--cream);
+        }
+        
+        .faq h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: var(--white);
+            border-radius: 12px;
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        
+        .faq-answer {
+            padding: 0 24px 24px;
+            color: var(--gray);
+            display: none;
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            padding: 100px 20px;
+            background: linear-gradient(135deg, var(--charcoal) 0%, #1a1a1a 100%);
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .final-cta h2 {
+            font-size: 42px;
+            margin-bottom: 16px;
+        }
+        
+        .final-cta p {
+            font-size: 18px;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 32px;
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin: 32px 0;
+        }
+        
+        .countdown-item {
+            text-align: center;
+        }
+        
+        .countdown-value {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .countdown-label {
+            font-size: 14px;
+            color: rgba(255,255,255,0.6);
+            text-transform: uppercase;
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--charcoal);
+            color: var(--white);
+            padding: 60px 20px 30px;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 48px;
+        }
+        
+        .footer-column h4 {
+            font-size: 16px;
+            margin-bottom: 20px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-column a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-column a:hover {
+            color: var(--white);
+        }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            font-size: 14px;
+            color: rgba(255,255,255,0.5);
+        }
+        
+        /* Email Capture Section */
+        .email-capture {
+            background: var(--primary);
+            padding: 40px 20px;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .email-capture h3 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        
+        .email-capture p {
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        
+        .email-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            gap: 12px;
+        }
+        
+        .email-form input {
+            flex: 1;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+        }
+        
+        .email-form button {
+            background: var(--charcoal);
+            color: var(--white);
+            padding: 14px 28px;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .email-form button:hover {
+            background: var(--white);
+            color: var(--charcoal);
+        }
+        
+        /* Mobile Sticky CTA */
+        .mobile-sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            padding: 12px 20px;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+            z-index: 9998;
+            justify-content: center;
+        }
+        
+        .mobile-sticky-cta .btn-primary {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        
+        /* Live Chat Widget Placeholder */
+        .chat-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(232, 90, 79, 0.4);
+            z-index: 9999;
+            transition: transform 0.3s ease;
+        }
+        
+        .chat-widget:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Exit Intent Popup */
+        .exit-popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .exit-popup.active {
+            display: flex;
+        }
+        
+        .exit-popup-content {
+            background: var(--white);
+            padding: 48px;
+            border-radius: 16px;
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .exit-popup-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--gray);
+        }
+        
+        .exit-popup h3 {
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+        
+        .exit-popup .discount {
+            font-size: 48px;
+            color: var(--primary);
+            font-weight: 700;
+            margin: 24px 0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px 20px 60px;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .hero-image {
+                max-width: 100%;
+                margin-bottom: 24px;
+            }
+            
+            .features-container,
+            .product-carousel,
+            .testimonial-grid,
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .steps {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-ctas {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .countdown {
+                gap: 16px;
+            }
+            
+            .countdown-value {
+                font-size: 32px;
+            }
+            
+            .email-form {
+                flex-direction: column;
+            }
+            
+            .mobile-sticky-cta {
+                display: flex;
+            }
+            
+            .chat-widget {
+                bottom: 80px;
+            }
+            
+            .final-cta {
+                padding-bottom: 120px;
+            }
+            
+            .products, .testimonials, .guarantee, .faq, .how-it-works {
+                padding-bottom: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        🎉 Limited Time: <span>25% OFF</span> All Pajamas with code <span>COZY25</span> | Free Shipping Over $50
+    </div>
+
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+        <div class="header-container">
+            <div class="logo">Cuddle Clones</div>
+            <a href="#products" class="header-cta">Shop Now →</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="reviews-badge">
+                <span class="stars">★★★★★</span>
+                <span>4.9/5 from 10,000+ happy customers</span>
+            </div>
+            
+            <h1>Finally, Pajamas That Can Handle <span>Your Fur Baby's Love</span></h1>
+            
+            <p class="hero-subtitle">
+                Pet-hair resistant, breathable summer sleepwear designed for pet parents. 
+                Lounge in luxury with your furry friends without the fur struggle.
+            </p>
+            
+            <!-- Hero Image -->
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&h=500&fit=crop" 
+                     alt="Happy woman in pajamas cuddling with her golden retriever on the couch"
+                     loading="eager">
+            </div>
+            
+            <div class="promo-code">
+                <span class="promo-label">Use code:</span>
+                <span class="promo-value">COZY25</span>
+            </div>
+            
+            <div class="hero-ctas">
+                <a href="#products" class="btn-primary">Shop the Collection →</a>
+                <a href="#features" class="btn-secondary">See How It Works</a>
+            </div>
+            
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"></path></svg>
+                    <span>Free Shipping</span>
+                </div>
+                <div class="trust-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"></path></svg>
+                    <span>30-Day Returns</span>
+                </div>
+                <div class="trust-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"></path></svg>
+                    <span>50,000+ Happy Customers</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+            <span>Scroll to explore</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Media Logos -->
+    <section class="media-section">
+        <p>As Featured In</p>
+        <div class="media-logos">
+            <div class="media-logo">Vogue</div>
+            <div class="media-logo">Forbes</div>
+            <div class="media-logo">BuzzFeed</div>
+            <div class="media-logo">People</div>
+            <div class="media-logo">Today Show</div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <div class="features-image">
+                <img src="https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?w=600&h=500&fit=crop" 
+                     alt="Woman relaxing at home with her cat in comfortable loungewear"
+                     loading="lazy">
+            </div>
+            <div class="features-content">
+                <h2>Designed for Pet Parents Who Value Comfort</h2>
+                <p style="color: var(--gray); margin-bottom: 24px;">
+                    Our Short Button-Down Set combines breathable fabrics with pet-friendly design. 
+                    No more worrying about fur, scratches, or overheating during cuddle time.
+                </p>
+                
+                <ul class="features-list">
+                    <li><strong>Pet-hair resistant fabric</strong> repels fur for easy cleaning</li>
+                    <li>Breathable cotton-modal blend keeps you cool all night</li>
+                    <li>Relaxed fit perfect for lounging with your furry friends</li>
+                    <li>Durable construction withstands playful paws</li>
+                    <li>Machine washable for effortless care</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Marquee -->
+    <div class="marquee">
+        <div class="marquee-content">
+            🎉 25% OFF WITH CODE COZY25 • FREE SHIPPING OVER $50 • 30-DAY HAPPINESS GUARANTEE • 50,000+ HAPPY CUSTOMERS • 🎉 25% OFF WITH CODE COZY25 • FREE SHIPPING OVER $50 • 30-DAY HAPPINESS GUARANTEE • 50,000+ HAPPY CUSTOMERS •
+        </div>
+    </div>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Choose Your Style</h3>
+                <p>Select from our curated collection of pet-friendly pajamas in sizes XS-3XL</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Apply COZY25</h3>
+                <p>Enter code COZY25 at checkout for instant 25% savings on your order</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Cuddle in Comfort</h3>
+                <p>Receive your pajamas in 3-5 days and enjoy the ultimate lounging experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <h2>Shop the Collection</h2>
+        
+        <div class="product-carousel">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=300&fit=crop" 
+                         alt="Short Button-Down Pajama Set - Coral Pink"
+                         loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Short Button-Down Set</h3>
+                    <div class="product-price">
+                        $67.50
+                        <span class="original">$90.00</span>
+                    </div>
+                    <a href="#" class="btn-primary" style="width: 100%; text-align: center;">Add to Cart</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1617331721458-bd3bd3f9c7f8?w=400&h=300&fit=crop" 
+                         alt="Classic Pajama Set - Soft Blue"
+                         loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Classic Pajama Set</h3>
+                    <div class="product-price">
+                        $56.25
+                        <span class="original">$75.00</span>
+                    </div>
+                    <a href="#" class="btn-primary" style="width: 100%; text-align: center;">Add to Cart</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?w=400&h=300&fit=crop" 
+                         alt="Lounge Shorts Set - Cream White"
+                         loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h3>Lounge Shorts Set</h3>
+                    <div class="product-price">
+                        $48.75
+                        <span class="original">$65.00</span>
+                    </div>
+                    <a href="#" class="btn-primary" style="width: 100%; text-align: center;">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What Pet Parents Are Saying</h2>
+        
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <div class="testimonial-stars">★★★★★</div>
+                <p>"Finally, pajamas that can handle my golden retriever's cuddles! The fabric is incredibly soft and doesn't trap fur like my old ones. Game changer!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" 
+                             alt="Sarah J. with her dog">
+                    </div>
+                    <div>
+                        <div class="author-name">Sarah J.</div>
+                        <div class="author-title">Verified Buyer 🐕</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-stars">★★★★★</div>
+                <p>"I was skeptical about the 'pet-hair resistant' claim, but these actually work! My cat sleeps on me every night and I barely notice any fur."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" 
+                             alt="Michelle R. with her cat">
+                    </div>
+                    <div>
+                        <div class="author-name">Michelle R.</div>
+                        <div class="author-title">Verified Buyer 🐈</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-stars">★★★★★</div>
+                <p>"The 25% off made it an easy decision, but the quality made me a repeat customer. My third pair and still obsessed! My pug approves too."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face" 
+                             alt="Amanda K. with her pug">
+                    </div>
+                    <div>
+                        <div class="author-name">Amanda K.</div>
+                        <div class="author-title">Verified Buyer 🐕</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee -->
+    <section class="guarantee">
+        <div class="guarantee-content">
+            <div class="guarantee-icon">😊</div>
+            <h2>100% Happiness Guarantee</h2>
+            <p>We believe you'll love your new pajamas. But if for any reason you're not completely satisfied, return them within 30 days for a full refund. No questions asked.</p>
+            <a href="#products" class="btn-primary">Shop with Confidence →</a>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    <span>How do I use the COZY25 promo code?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Simply enter "COZY25" in the promo code box at checkout. Your 25% discount will be automatically applied to all eligible pajama items in your cart.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    <span>What sizes are available?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Our pajamas come in sizes XS through 3XL. Check our detailed size chart to find your perfect fit. When in doubt, size up for the ultimate relaxed lounging experience.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    <span>How long does shipping take?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Standard shipping takes 3-5 business days. We also offer expedited 2-day shipping at checkout. All orders over $50 qualify for free standard shipping.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    <span>Can I return if they don't fit?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Absolutely! We offer a 30-day happiness guarantee. If your pajamas don't fit perfectly or you're not completely satisfied, return them for a full refund or exchange.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Capture -->
+    <section class="email-capture">
+        <h3>Get 10% Off Your First Order</h3>
+        <p>Join 50,000+ pet parents and be the first to know about new arrivals and exclusive offers</p>
+        
+        <form class="email-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe →</button>
+        </form>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <h2>Don't Miss Out on 25% Off</h2>
+        <p>The perfect summer pajamas for you and your furry friends are just a click away</p>
+        
+        <div class="countdown">
+            <div class="countdown-item">
+                <div class="countdown-value" id="hours">23</div>
+                <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-value" id="minutes">59</div>
+                <div class="countdown-label">Minutes</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-value" id="seconds">59</div>
+                <div class="countdown-label">Seconds</div>
+            </div>
+        </div>
+        
+        <a href="#products" class="btn-primary" style="font-size: 18px; padding: 18px 48px;">Claim Your 25% Off →</a>
+        
+        <p style="margin-top: 24px; font-size: 14px; color: rgba(255,255,255,0.6);">
+            Use code <strong style="color: var(--primary);">COZY25</strong> at checkout
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">All Pajamas</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 Cuddle Clones. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-sticky-cta">
+        <a href="#products" class="btn-primary">Claim 25% Off →</a>
+    </div>
+
+    <!-- Live Chat Widget -->
+    <div class="chat-widget" onclick="alert('Live chat coming soon!')">💬</div>
+
+    <!-- Exit Intent Popup -->
+    <div class="exit-popup" id="exitPopup">
+        <div class="exit-popup-content">
+            <span class="exit-popup-close" onclick="document.getElementById('exitPopup').classList.remove('active')">×</span>
+            <h3>Wait! Don't Leave Empty-Pawed 🐾</h3>
+            <p>Subscribe now and get an additional</p>
+            
+            <div class="discount">10% OFF</div>
+            
+            <p>On top of your 25% COZY25 discount!</p>
+            
+            <form onsubmit="event.preventDefault(); document.getElementById('exitPopup').classList.remove('active'); alert('Thanks! Check your email for the extra discount.');">
+                <input type="email" placeholder="Enter your email" style="width: 100%; padding: 14px; margin-bottom: 12px; border: 2px solid var(--light-gray); border-radius: 8px; font-size: 16px;" required>
+                <button type="submit" class="btn-primary" style="width: 100%;">Get My Extra 10% Off →</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+            const diff = endOfDay - now;
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // Exit Intent Detection
+        let exitIntentShown = false;
+        document.addEventListener('mouseout', function(e) {
+            if (!exitIntentShown && e.clientY < 10) {
+                document.getElementById('exitPopup').classList.add('active');
+                exitIntentShown = true;
+            }
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+        
+        // Hide mobile sticky CTA when near footer
+        const mobileCta = document.querySelector('.mobile-sticky-cta');
+        const footer = document.querySelector('.footer');
+        
+        window.addEventListener('scroll', () => {
+            if (window.innerWidth <= 768) {
+                const footerRect = footer.getBoundingClientRect();
+                if (footerRect.top < window.innerHeight) {
+                    mobileCta.style.transform = 'translateY(100%)';
+                } else {
+                    mobileCta.style.transform = 'translateY(0)';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
