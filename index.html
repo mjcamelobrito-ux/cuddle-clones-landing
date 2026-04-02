@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finally, Pajamas That Can Handle Your Fur Baby's Love - 25% Off | Cuddle Clones</title>
-    <meta name="description" content="Pet-hair resistant summer pajamas for pet parents. Breathable, stylish sleepwear designed for cuddling with furry friends. Get 25% off with code COZY25.">
+    <title>The Perfect Summer Pajamas - 25% Off | Cuddle Clones</title>
+    <meta name="description" content="The ultimate summer pajamas for pet owners. Breathable, stylish sleepwear for warmer nights. Get 25% off with code COZY25.">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -106,7 +106,6 @@
             background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
             padding: 60px 20px 80px;
             text-align: center;
-            position: relative;
         }
         
         .hero-container {
@@ -131,7 +130,7 @@
         }
         
         .hero h1 {
-            font-size: 44px;
+            font-size: 48px;
             margin-bottom: 20px;
             color: var(--charcoal);
         }
@@ -147,20 +146,6 @@
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
-        }
-        
-        .hero-image {
-            max-width: 600px;
-            margin: 0 auto 40px;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-        }
-        
-        .hero-image img {
-            width: 100%;
-            height: auto;
-            display: block;
         }
         
         .promo-code {
@@ -234,32 +219,6 @@
             color: var(--white);
         }
         
-        /* Scroll Indicator */
-        .scroll-indicator {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: var(--gray);
-            font-size: 12px;
-            animation: bounce 2s infinite;
-            cursor: pointer;
-        }
-        
-        .scroll-indicator svg {
-            width: 24px;
-            height: 24px;
-            margin-top: 4px;
-        }
-        
-        @keyframes bounce {
-            0%, 100% { transform: translateX(-50%) translateY(0); }
-            50% { transform: translateX(-50%) translateY(8px); }
-        }
-        
         /* Trust Badges */
         .trust-badges {
             display: flex;
@@ -281,6 +240,21 @@
             width: 20px;
             height: 20px;
             color: var(--success);
+        }
+        
+        /* Hero Image */
+        .hero-image {
+            max-width: 600px;
+            margin: 40px auto 0;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
         
         /* Media Logos */
@@ -329,15 +303,16 @@
         }
         
         .features-image {
+            background: var(--cream);
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            height: 500px;
         }
         
         .features-image img {
             width: 100%;
-            height: auto;
-            display: block;
+            height: 100%;
+            object-fit: cover;
         }
         
         .features-content h2 {
@@ -478,6 +453,9 @@
         .product-image {
             height: 300px;
             background: var(--cream-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             overflow: hidden;
         }
         
@@ -485,7 +463,6 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            display: block;
         }
         
         .product-info {
@@ -560,8 +537,12 @@
             width: 48px;
             height: 48px;
             border-radius: 50%;
+            background: var(--cream-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
             overflow: hidden;
-            flex-shrink: 0;
         }
         
         .author-avatar img {
@@ -577,6 +558,15 @@
         .author-title {
             font-size: 14px;
             color: var(--gray);
+        }
+        
+        .verified-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+            color: var(--success);
+            margin-top: 4px;
         }
         
         /* Guarantee Section */
@@ -799,26 +789,6 @@
             color: var(--charcoal);
         }
         
-        /* Mobile Sticky CTA */
-        .mobile-sticky-cta {
-            display: none;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: var(--white);
-            padding: 12px 20px;
-            box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
-            z-index: 9998;
-            justify-content: center;
-        }
-        
-        .mobile-sticky-cta .btn-primary {
-            width: 100%;
-            max-width: 400px;
-            text-align: center;
-        }
-        
         /* Live Chat Widget Placeholder */
         .chat-widget {
             position: fixed;
@@ -891,19 +861,49 @@
             margin: 24px 0;
         }
         
+        /* Mobile Sticky CTA */
+        .mobile-sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            padding: 12px 20px;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+            z-index: 9998;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .mobile-sticky-cta .price-info {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .mobile-sticky-cta .current-price {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .mobile-sticky-cta .original-price {
+            font-size: 14px;
+            color: var(--gray);
+            text-decoration: line-through;
+        }
+        
+        .mobile-sticky-cta .btn-primary {
+            padding: 12px 24px;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+        
         /* Responsive */
         @media (max-width: 768px) {
-            .hero {
-                padding: 40px 20px 60px;
-            }
-            
             .hero h1 {
-                font-size: 28px;
-            }
-            
-            .hero-image {
-                max-width: 100%;
-                margin-bottom: 24px;
+                font-size: 32px;
             }
             
             .features-container,
@@ -948,12 +948,8 @@
                 bottom: 80px;
             }
             
-            .final-cta {
-                padding-bottom: 120px;
-            }
-            
-            .products, .testimonials, .guarantee, .faq, .how-it-works {
-                padding-bottom: 100px;
+            body {
+                padding-bottom: 70px;
             }
         }
     </style>
@@ -983,16 +979,9 @@
             <h1>Finally, Pajamas That Can Handle <span>Your Fur Baby's Love</span></h1>
             
             <p class="hero-subtitle">
-                Pet-hair resistant, breathable summer sleepwear designed for pet parents. 
-                Lounge in luxury with your furry friends without the fur struggle.
+                The ultimate summer pajamas for pet parents. Breathable, pet-hair resistant fabric 
+                designed for endless cuddles with your furry friends.
             </p>
-            
-            <!-- Hero Image -->
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800&h=500&fit=crop" 
-                     alt="Happy woman in pajamas cuddling with her golden retriever on the couch"
-                     loading="eager">
-            </div>
             
             <div class="promo-code">
                 <span class="promo-label">Use code:</span>
@@ -1000,8 +989,8 @@
             </div>
             
             <div class="hero-ctas">
-                <a href="#products" class="btn-primary">Shop the Collection →</a>
-                <a href="#features" class="btn-secondary">See How It Works</a>
+                <a href="#products" class="btn-primary">Get 25% Off Now →</a>
+                <a href="#features" class="btn-secondary">Learn More</a>
             </div>
             
             <div class="trust-badges">
@@ -1018,14 +1007,13 @@
                     <span>50,000+ Happy Customers</span>
                 </div>
             </div>
-        </div>
-        
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
-            <span>Scroll to explore</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 5v14M19 12l-7 7-7-7"/>
-            </svg>
+            
+            <!-- Hero Image -->
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1541781777621-af13455ca4ce?w=800&h=600&fit=crop" 
+                     alt="Happy woman in pajamas cuddling with her golden retriever on a cozy couch"
+                     onerror="this.src='https://via.placeholder.com/800x600/E85A4F/FFFFFF?text=Pet+Parent+Cuddles'">
+            </div>
         </div>
     </section>
 
@@ -1045,9 +1033,9 @@
     <section class="features" id="features">
         <div class="features-container">
             <div class="features-image">
-                <img src="https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?w=600&h=500&fit=crop" 
-                     alt="Woman relaxing at home with her cat in comfortable loungewear"
-                     loading="lazy">
+                <img src="https://images.unsplash.com/photo-1517423568366-8b83523034fd?w=600&h=800&fit=crop" 
+                     alt="Woman relaxing in comfortable pajamas with her cat"
+                     onerror="this.style.display='none'">
             </div>
             <div class="features-content">
                 <h2>Designed for Pet Parents Who Value Comfort</h2>
@@ -1057,8 +1045,8 @@
                 </p>
                 
                 <ul class="features-list">
-                    <li><strong>Pet-hair resistant fabric</strong> repels fur for easy cleaning</li>
                     <li>Breathable cotton-modal blend keeps you cool all night</li>
+                    <li>Pet-hair resistant fabric repels fur for easy cleaning</li>
                     <li>Relaxed fit perfect for lounging with your furry friends</li>
                     <li>Durable construction withstands playful paws</li>
                     <li>Machine washable for effortless care</li>
@@ -1106,9 +1094,9 @@
         <div class="product-carousel">
             <div class="product-card">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=300&fit=crop" 
-                         alt="Short Button-Down Pajama Set - Coral Pink"
-                         loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=500&fit=crop" 
+                         alt="Short Button-Down Pajama Set"
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='[Product Image]'">
                 </div>
                 <div class="product-info">
                     <h3>Short Button-Down Set</h3>
@@ -1122,9 +1110,9 @@
             
             <div class="product-card">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1617331721458-bd3bd3f9c7f8?w=400&h=300&fit=crop" 
-                         alt="Classic Pajama Set - Soft Blue"
-                         loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1517445312882-fa99b53d29ee?w=400&h=500&fit=crop" 
+                         alt="Classic Pajama Set"
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='[Product Image]'">
                 </div>
                 <div class="product-info">
                     <h3>Classic Pajama Set</h3>
@@ -1138,9 +1126,9 @@
             
             <div class="product-card">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?w=400&h=300&fit=crop" 
-                         alt="Lounge Shorts Set - Cream White"
-                         loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=500&fit=crop" 
+                         alt="Lounge Shorts Set"
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='[Product Image]'">
                 </div>
                 <div class="product-info">
                     <h3>Lounge Shorts Set</h3>
@@ -1164,12 +1152,17 @@
                 <p>"Finally, pajamas that can handle my golden retriever's cuddles! The fabric is incredibly soft and doesn't trap fur like my old ones. Game changer!"</p>
                 <div class="testimonial-author">
                     <div class="author-avatar">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" 
-                             alt="Sarah J. with her dog">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" 
+                             alt="Sarah J."
+                             onerror="this.style.display='none'; this.parentElement.textContent='SJ'">
                     </div>
                     <div>
                         <div class="author-name">Sarah J.</div>
-                        <div class="author-title">Verified Buyer 🐕</div>
+                        <div class="author-title">Golden Retriever Mom</div>
+                        <div class="verified-badge">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"></path></svg>
+                            Verified Buyer
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1179,27 +1172,37 @@
                 <p>"I was skeptical about the 'pet-hair resistant' claim, but these actually work! My cat sleeps on me every night and I barely notice any fur."</p>
                 <div class="testimonial-author">
                     <div class="author-avatar">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" 
-                             alt="Michelle R. with her cat">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" 
+                             alt="Michelle R."
+                             onerror="this.style.display='none'; this.parentElement.textContent='MR'">
                     </div>
                     <div>
                         <div class="author-name">Michelle R.</div>
-                        <div class="author-title">Verified Buyer 🐈</div>
+                        <div class="author-title">Cat Lover</div>
+                        <div class="verified-badge">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"></path></svg>
+                            Verified Buyer
+                        </div>
                     </div>
                 </div>
             </div>
             
             <div class="testimonial">
                 <div class="testimonial-stars">★★★★★</div>
-                <p>"The 25% off made it an easy decision, but the quality made me a repeat customer. My third pair and still obsessed! My pug approves too."</p>
+                <p>"The 25% off made it an easy decision, but the quality made me a repeat customer. My third pair and still obsessed! Worth every penny."</p>
                 <div class="testimonial-author">
                     <div class="author-avatar">
-                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face" 
-                             alt="Amanda K. with her pug">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop" 
+                             alt="Amanda K."
+                             onerror="this.style.display='none'; this.parentElement.textContent='AK'">
                     </div>
                     <div>
                         <div class="author-name">Amanda K.</div>
-                        <div class="author-title">Verified Buyer 🐕</div>
+                        <div class="author-title">Dog Mom of 3</div>
+                        <div class="verified-badge">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"></path></svg>
+                            Verified Buyer
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1350,13 +1353,17 @@
         </div>
     </footer>
 
-    <!-- Mobile Sticky CTA -->
-    <div class="mobile-sticky-cta">
-        <a href="#products" class="btn-primary">Claim 25% Off →</a>
-    </div>
-
     <!-- Live Chat Widget -->
     <div class="chat-widget" onclick="alert('Live chat coming soon!')">💬</div>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-sticky-cta">
+        <div class="price-info">
+            <span class="current-price">$67.50</span>
+            <span class="original-price">$90.00</span>
+        </div>
+        <a href="#products" class="btn-primary">Get 25% Off →</a>
+    </div>
 
     <!-- Exit Intent Popup -->
     <div class="exit-popup" id="exitPopup">
@@ -1413,21 +1420,6 @@
                     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
-        });
-        
-        // Hide mobile sticky CTA when near footer
-        const mobileCta = document.querySelector('.mobile-sticky-cta');
-        const footer = document.querySelector('.footer');
-        
-        window.addEventListener('scroll', () => {
-            if (window.innerWidth <= 768) {
-                const footerRect = footer.getBoundingClientRect();
-                if (footerRect.top < window.innerHeight) {
-                    mobileCta.style.transform = 'translateY(100%)';
-                } else {
-                    mobileCta.style.transform = 'translateY(0)';
-                }
-            }
         });
     </script>
 </body>
