@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Perfect Summer Pajamas - 25% Off | Cuddle Clones</title>
     <meta name="description" content="The ultimate summer pajamas for pet owners. Breathable, stylish sleepwear for warmer nights. Get 25% off with code COZY25.">
+    <link rel="canonical" href="https://mjcamelobrito-ux.github.io/cuddle-clones-landing/">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="The Perfect Summer Pajamas - 25% Off | Cuddle Clones">
+    <meta property="og:description" content="The ultimate summer pajamas for pet owners. Breathable, stylish sleepwear for warmer nights. Get 25% off with code COZY25.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mjcamelobrito-ux.github.io/cuddle-clones-landing/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1541781777621-af13455ca4ce?w=1200&h=630&fit=crop">
+    <meta property="og:site_name" content="Cuddle Clones">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Perfect Summer Pajamas - 25% Off | Cuddle Clones">
+    <meta name="twitter:description" content="The ultimate summer pajamas for pet owners. Breathable, stylish sleepwear for warmer nights. Get 25% off with code COZY25.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1541781777621-af13455ca4ce?w=1200&h=630&fit=crop">
+
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,6 +39,31 @@
             --white: #FFFFFF;
             --success: #4CAF50;
             --warning: #FF9800;
+        /* Skip Navigation & Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary);
+            color: var(--white);
+            padding: 8px 16px;
+            text-decoration: none;
+            font-weight: 600;
+            z-index: 10000;
+            border-radius: 0 0 8px 0;
+            transition: top 0.3s;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        *:focus-visible {
+            outline: 3px solid var(--primary);
+            outline-offset: 2px;
+        }
+        a:focus-visible, button:focus-visible, [role="button"]:focus-visible {
+            outline: 3px solid var(--primary);
+            outline-offset: 2px;
+            border-radius: 4px;
         }
         
         * {
@@ -900,6 +941,23 @@
             white-space: nowrap;
         }
         
+        
+        /* Tablet breakpoint */
+        @media (max-width: 1024px) {
+            .features-container {
+                gap: 32px;
+            }
+            .product-carousel {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .testimonial-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
@@ -940,6 +998,11 @@
                 flex-direction: column;
             }
             
+            .header-cta, .btn-primary, .btn-secondary, .faq-question {
+                min-height: 44px;
+                min-width: 44px;
+            }
+            
             .mobile-sticky-cta {
                 display: flex;
             }
@@ -953,23 +1016,52 @@
             }
         }
     </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Cuddle Clones Summer Pajamas",
+        "description": "The ultimate summer pajamas for pet owners. Breathable, stylish sleepwear for warmer nights. Get 25% off with code COZY25.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Cuddle Clones"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "67.50",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "discountCode": "COZY25",
+            "discount": "25%"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "10000"
+        }
+    }
+    </script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Announcement Bar -->
     <div class="announcement-bar">
         🎉 Limited Time: <span>25% OFF</span> All Pajamas with code <span>COZY25</span> | Free Shipping Over $50
     </div>
 
     <!-- Sticky Header -->
-    <header class="sticky-header">
+    <header class="sticky-header" role="banner">
         <div class="header-container">
             <div class="logo">Cuddle Clones</div>
-            <a href="#products" class="header-cta">Shop Now →</a>
+            <a href="#products" class="header-cta" aria-label="Shop Cuddle Clones pajamas collection">Shop Now →</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="main-content">
         <div class="hero-container">
             <div class="reviews-badge">
                 <span class="stars">★★★★★</span>
@@ -989,7 +1081,7 @@
             </div>
             
             <div class="hero-ctas">
-                <a href="#products" class="btn-primary">Get 25% Off Now →</a>
+                <a href="#products" class="btn-primary" aria-label="Get 25% off with promo code COZY25">Get 25% Off Now →</a>
                 <a href="#features" class="btn-secondary">Learn More</a>
             </div>
             
@@ -1034,7 +1126,7 @@
         <div class="features-container">
             <div class="features-image">
                 <img src="https://images.unsplash.com/photo-1517423568366-8b83523034fd?w=600&h=800&fit=crop" 
-                     alt="Woman relaxing in comfortable pajamas with her cat"
+                     alt="Woman relaxing in comfortable pajamas with her cat" loading="lazy"
                      onerror="this.style.display='none'">
             </div>
             <div class="features-content">
@@ -1095,7 +1187,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=500&fit=crop" 
-                         alt="Short Button-Down Pajama Set"
+                         alt="Short Button-Down Pajama Set" loading="lazy"
                          onerror="this.style.display='none'; this.parentElement.innerHTML='[Product Image]'">
                 </div>
                 <div class="product-info">
@@ -1111,7 +1203,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <img src="https://images.unsplash.com/photo-1517445312882-fa99b53d29ee?w=400&h=500&fit=crop" 
-                         alt="Classic Pajama Set"
+                         alt="Classic Pajama Set" loading="lazy"
                          onerror="this.style.display='none'; this.parentElement.innerHTML='[Product Image]'">
                 </div>
                 <div class="product-info">
@@ -1127,7 +1219,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=500&fit=crop" 
-                         alt="Lounge Shorts Set"
+                         alt="Lounge Shorts Set" loading="lazy"
                          onerror="this.style.display='none'; this.parentElement.innerHTML='[Product Image]'">
                 </div>
                 <div class="product-info">
@@ -1153,7 +1245,7 @@
                 <div class="testimonial-author">
                     <div class="author-avatar">
                         <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" 
-                             alt="Sarah J."
+                             alt="Sarah J." loading="lazy"
                              onerror="this.style.display='none'; this.parentElement.textContent='SJ'">
                     </div>
                     <div>
@@ -1173,7 +1265,7 @@
                 <div class="testimonial-author">
                     <div class="author-avatar">
                         <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" 
-                             alt="Michelle R."
+                             alt="Michelle R." loading="lazy"
                              onerror="this.style.display='none'; this.parentElement.textContent='MR'">
                     </div>
                     <div>
@@ -1193,7 +1285,7 @@
                 <div class="testimonial-author">
                     <div class="author-avatar">
                         <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop" 
-                             alt="Amanda K."
+                             alt="Amanda K." loading="lazy"
                              onerror="this.style.display='none'; this.parentElement.textContent='AK'">
                     </div>
                     <div>
@@ -1225,7 +1317,7 @@
         
         <div class="faq-container">
             <div class="faq-item">
-                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')" aria-expanded="false" role="button" tabindex="0">
                     <span>How do I use the COZY25 promo code?</span>
                     <span>+</span>
                 </div>
@@ -1235,7 +1327,7 @@
             </div>
             
             <div class="faq-item">
-                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')" aria-expanded="false" role="button" tabindex="0">
                     <span>What sizes are available?</span>
                     <span>+</span>
                 </div>
@@ -1245,7 +1337,7 @@
             </div>
             
             <div class="faq-item">
-                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')" aria-expanded="false" role="button" tabindex="0">
                     <span>How long does shipping take?</span>
                     <span>+</span>
                 </div>
@@ -1255,7 +1347,7 @@
             </div>
             
             <div class="faq-item">
-                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')" aria-expanded="false" role="button" tabindex="0">
                     <span>Can I return if they don't fit?</span>
                     <span>+</span>
                 </div>
@@ -1272,8 +1364,8 @@
         <p>Join 50,000+ pet parents and be the first to know about new arrivals and exclusive offers</p>
         
         <form class="email-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe →</button>
+            <input type="email" placeholder="Enter your email" required aria-label="Email address for newsletter signup">
+            <button type="submit" aria-label="Subscribe to get 10% off first order">Subscribe →</button>
         </form>
     </section>
 
@@ -1305,7 +1397,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer-container">
             <div class="footer-column">
                 <h4>Shop</h4>
